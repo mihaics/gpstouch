@@ -1,0 +1,6 @@
+org/gpstouch/samples/backend/DataService.class
+org/gpstouch/samples/backend/data/Category.class
+org/gpstouch/samples/backend/mock/MockDataGenerator.class
+org/gpstouch/samples/backend/data/Availability.class
+org/gpstouch/samples/backend/data/Product.class
+org/gpstouch/samples/backend/mock/MockDataService.class

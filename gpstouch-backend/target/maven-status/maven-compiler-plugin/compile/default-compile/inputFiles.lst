@@ -1,0 +1,6 @@
+/home/mihai/NetBeansProjects/gpstouch/gpstouch-backend/src/main/java/org/gpstouch/samples/backend/DataService.java
+/home/mihai/NetBeansProjects/gpstouch/gpstouch-backend/src/main/java/org/gpstouch/samples/backend/mock/MockDataService.java
+/home/mihai/NetBeansProjects/gpstouch/gpstouch-backend/src/main/java/org/gpstouch/samples/backend/data/Availability.java
+/home/mihai/NetBeansProjects/gpstouch/gpstouch-backend/src/main/java/org/gpstouch/samples/backend/data/Category.java
+/home/mihai/NetBeansProjects/gpstouch/gpstouch-backend/src/main/java/org/gpstouch/samples/backend/mock/MockDataGenerator.java
+/home/mihai/NetBeansProjects/gpstouch/gpstouch-backend/src/main/java/org/gpstouch/samples/backend/data/Product.java

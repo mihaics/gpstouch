@@ -1,0 +1,2 @@
+# Module org.gpstouch.GPSAppWidgetset
+# RPC service class, partial path of RPC policy file
