@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="gpstouchPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>org.gpstouch.gts.backend.model.RoleAcl</class>
+        <class>org.gpstouch.gts.backend.model.Geozone</class>
+        <class>org.gpstouch.gts.backend.model.StatusCode</class>
+        <class>org.gpstouch.gts.backend.model.EventData</class>
+        <class>org.gpstouch.gts.backend.model.SessionStats</class>
+        <class>org.gpstouch.gts.backend.model.Device</class>
+        <class>org.gpstouch.gts.backend.model.Transport</class>
+        <class>org.gpstouch.gts.backend.model.UnassignedDevices</class>
+        <class>org.gpstouch.gts.backend.model.Role</class>
+        <class>org.gpstouch.gts.backend.model.User</class>
+        <class>org.gpstouch.gts.backend.model.GeoCorridorList</class>
+        <class>org.gpstouch.gts.backend.model.Kbfacturi</class>
+        <class>org.gpstouch.gts.backend.model.Kbclienti</class>
+        <class>org.gpstouch.gts.backend.model.Entity</class>
+        <class>org.gpstouch.gts.backend.model.Driver</class>
+        <class>org.gpstouch.gts.backend.model.DeviceList</class>
+        <class>org.gpstouch.gts.backend.model.Rule</class>
+        <class>org.gpstouch.gts.backend.model.Property</class>
+        <class>org.gpstouch.gts.backend.model.FuelRegister</class>
+        <class>org.gpstouch.gts.backend.model.Account</class>
+        <class>org.gpstouch.gts.backend.model.GeoCorridor</class>
+        <class>org.gpstouch.gts.backend.model.GroupList</class>
+        <class>org.gpstouch.gts.backend.model.Antx</class>
+        <class>org.gpstouch.gts.backend.model.PendingPacket</class>
+        <class>org.gpstouch.gts.backend.model.UniqueXID</class>
+        <class>org.gpstouch.gts.backend.model.SystemAudit</class>
+        <class>org.gpstouch.gts.backend.model.SystemProps</class>
+        <class>org.gpstouch.gts.backend.model.NotifyQueue</class>
+        <class>org.gpstouch.gts.backend.model.UserAcl</class>
+        <class>org.gpstouch.gts.backend.model.AccountString</class>
+        <class>org.gpstouch.gts.backend.model.PendingCommands</class>
+        <class>org.gpstouch.gts.backend.model.DeviceGroup</class>
+        <class>org.gpstouch.gts.backend.model.EventTemplate</class>
+        <class>org.gpstouch.gts.backend.model.Resource</class>
+        <class>org.gpstouch.gts.backend.model.ReportJob</class>
+        <class>org.gpstouch.gts.backend.model.Diagnostic</class>
+        <class>org.gpstouch.gts.backend.model.RuleList</class>
+        <class>org.gpstouch.gts.backend.model.Kbacc</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/gts?zeroDateTimeBehavior=convertToNull"/>
+            <property name="javax.persistence.jdbc.user" value="gts"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.password" value="opengts"/>
+            <property name="javax.persistence.schema-generation.database.action" value="create"/>
+        </properties>
+    </persistence-unit>
+</persistence>
