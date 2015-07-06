@@ -24,6 +24,7 @@ public class SampleCrudLogic {
     }
 
     public void init() {
+        view.setFormCategories(DataService.get().getAllCategories());
         editProduct(null);
         // Hide and disable if not admin
         if (!GPSTouchUI.get().getAccessControl().isUserInRole("admin")) {

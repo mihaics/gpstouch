@@ -6,13 +6,18 @@
 package org.gpstouch.backend.service;
 
 import java.util.List;
+import javax.ejb.Local;
+import javax.ejb.TransactionAttribute;
 import javax.persistence.EntityManager;
 
 /**
  *
  * @author mihai
  */
+@TransactionAttribute
+@Local
 public abstract class AbstractFacade<T> {
+
     private Class<T> entityClass;
 
     public AbstractFacade(Class<T> entityClass) {

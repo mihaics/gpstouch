@@ -103,8 +103,8 @@
     </repositories>
     <modules>
         <module>gpstouch-widgetset</module>
-        <module>gpstouch-ui</module>
         <module>gpstouch-production</module>
-    <module>gpstouch-backend</module>
+        <module>gpstouch-backend</module>
+    <module>gpstouch-ui</module>
   </modules>
 </project>

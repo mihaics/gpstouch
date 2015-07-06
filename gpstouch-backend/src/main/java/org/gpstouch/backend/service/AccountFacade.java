@@ -16,6 +16,7 @@ import org.gpstouch.gts.backend.model.Account;
  */
 @Stateless
 public class AccountFacade extends AbstractFacade<Account> {
+
     @PersistenceContext(unitName = "gpstouchPU")
     private EntityManager em;
 

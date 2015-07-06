@@ -5,11 +5,19 @@
  */
 package org.gpstouch.account;
 
+import javax.annotation.PostConstruct;
+import javax.ejb.EJB;
+import org.gpstouch.backend.service.AccountFacade;
+import org.gpstouch.gts.backend.model.Account;
+
 /**
  *
  * @author mihai
  */
 public class AccountGridLogic {
+
+    @EJB
+    AccountFacade accountService;
 
     private final AccountGridView view;
 
@@ -17,13 +25,24 @@ public class AccountGridLogic {
         this.view = view;
     }
 
+    @PostConstruct
     public void init() {
+
+        view.showAccounts(accountService.findAll());
 
     }
 
     void enter(String accountID) {
         //select accountID or create a new one
 
+    }
+
+    void newAccount() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void rowSelected(Account selectedRow) {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

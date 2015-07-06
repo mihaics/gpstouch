@@ -9,13 +9,15 @@ import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.server.FontAwesome;
 import com.vaadin.ui.CssLayout;
 import com.vaadin.ui.HorizontalLayout;
+import org.gpstouch.account.AccountGridView;
 
 /**
  * Content of the UI when the user is logged in.
- * 
- * 
+ *
+ *
  */
 public class MainScreen extends HorizontalLayout {
+
     private Menu menu;
 
     public MainScreen(GPSTouchUI ui) {
@@ -31,7 +33,7 @@ public class MainScreen extends HorizontalLayout {
         menu = new Menu(navigator);
         menu.addView(new SampleCrudView(), SampleCrudView.VIEW_NAME,
                 SampleCrudView.VIEW_NAME, FontAwesome.EDIT);
-        menu.addView(new AboutView(), AboutView.VIEW_NAME, AboutView.VIEW_NAME,
+        menu.addView(new AccountGridView(), AccountGridView.VIEW_NAME, AccountGridView.VIEW_NAME,
                 FontAwesome.INFO_CIRCLE);
 
         navigator.addViewChangeListener(viewChangeListener);

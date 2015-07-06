@@ -24,6 +24,7 @@ import com.vaadin.ui.Notification.Type;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
+import org.gpstouch.samples.backend.data.Category;
 
 /**
  * A view for performing create-read-update-delete operations on products.
@@ -55,7 +56,9 @@ public class SampleCrudView extends CssLayout implements View {
         });
 
         form = new ProductForm(viewLogic);
-        form.setCategories(DataService.get().getAllCategories());
+        //form.setCategories(DataService.get().getAllCategories());//should be in the Logic init, views should not know about database
+        //the main View could be an intermediate between sub-view and the main Logic
+        //VO.setFormDataCategories(Ob) -> form.setCategories(Ob)
 
         VerticalLayout barAndGridLayout = new VerticalLayout();
         barAndGridLayout.addComponent(topLayout);
@@ -144,6 +147,12 @@ public class SampleCrudView extends CssLayout implements View {
             form.setEnabled(false);
         }
         form.editProduct(product);
+    }
+
+    public void setFormCategories(Collection<Category> categories) {
+
+        form.setCategories(categories);
+
     }
 
     public void showProducts(Collection<Product> products) {
