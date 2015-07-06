@@ -5,8 +5,9 @@
  */
 package org.gpstouch.account;
 
+import java.util.List;
 import javax.annotation.PostConstruct;
-import javax.ejb.EJB;
+import javax.inject.Inject;
 import org.gpstouch.backend.service.AccountFacade;
 import org.gpstouch.gts.backend.model.Account;
 
@@ -16,20 +17,22 @@ import org.gpstouch.gts.backend.model.Account;
  */
 public class AccountGridLogic {
 
-    @EJB
-    AccountFacade accountService;
+@Inject
+AccountFacade accountService;
 
     private final AccountGridView view;
+
+
 
     public AccountGridLogic(AccountGridView view) {
         this.view = view;
     }
 
-    @PostConstruct
+@PostConstruct  
     public void init() {
 
-        view.showAccounts(accountService.findAll());
-
+    // view.showAccounts(accountService.findAll());
+    //List<Account> findAll = accountService.findAll();
     }
 
     void enter(String accountID) {
